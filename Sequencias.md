@@ -111,13 +111,13 @@ Se usarmos `seq(from=a, to=b, length=c)`, teremos uma sequência de ‘a’ a
  seq(10,20,length=5)
 ```
 
-    [1] 10.0 12.5 15.0 17.5 20.0
+`[1] 10.0 12.5 15.0 17.5 20.0`
 
 ``` r
  seq(0,1,length=5)
 ```
 
-    [1] 0.00 0.25 0.50 0.75 1.00
+`[1] 0.00 0.25 0.50 0.75 1.00`
 
 ## A função sequence( )
 
