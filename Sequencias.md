@@ -5,7 +5,7 @@ Edson Zangiacomi Martinez
 
 ## Sequências de inteiros usando dois pontos (:)
 
-Os dois pontos : são usados para gerar sequências de números inteiros.
+Os dois pontos `:` são usados para gerar sequências de números inteiros.
 Veja o exemplo:
 
 ``` r
@@ -48,7 +48,7 @@ seq(15,30)
 
     [1] 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 
-O argumento by= é usado para gerar sequências com saltos:
+O argumento `by=` é usado para gerar sequências com saltos:
 
 ``` r
 seq(from=15, to=30, by=2)
@@ -104,7 +104,7 @@ matrix(seq(1,31,2),nrow=4,byrow=T)
     [3,]   17   19   21   23
     [4,]   25   27   29   31
 
-Se usarmos seq(from=a, to=b, length=c), teremos uma sequência de ‘a’ a
+Se usarmos `seq(from=a, to=b, length=c)`, teremos uma sequência de ‘a’ a
 ‘b’, com ‘c’ elementos:
 
 ``` r
@@ -118,3 +118,23 @@ Se usarmos seq(from=a, to=b, length=c), teremos uma sequência de ‘a’ a
 ```
 
     [1] 0.00 0.25 0.50 0.75 1.00
+
+## A função sequence( )
+
+``` r
+sequence(4:5)   # gera a sequência 1 2 3 4 1 2 3 4 5
+sequence(1:5)   # gera a sequência 1 1 2 1 2 3 1 2 3 4 1 2 3 4 5
+sequence(5:1)   # gera a sequência 1 2 3 4 5 1 2 3 4 1 2 3 1 2 1
+```
+
+## Repetições: a função rep( )
+
+``` r
+rep("boi",6)      # retorna "boi" "boi" "boi" "boi" "boi" "boi"
+rep(2,5)          # retorna 2 2 2 2 2
+rep(1,10)         # retorna o número 1 dez vezes
+rep(NA,20)        # retorna NA vinte vezes
+rep(1:4,4:1)      # retorna o número 1 quatro vezes, o 2 três vezes...
+rep(1:5,each=2)   # retorna duas vezes cada número da sequência de 1 a 5
+rep(1:5,2)        # repete a sequência de 1 a 5
+```
