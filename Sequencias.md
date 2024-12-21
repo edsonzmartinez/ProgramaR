@@ -81,3 +81,40 @@ seq(0,1,0.1)
 ```
 
     [1] 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+``` r
+month.abb
+```
+
+    [1] "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"
+
+``` r
+month.abb[seq(1,12,3)]
+```
+
+    [1] "Jan" "Apr" "Jul" "Oct"
+
+``` r
+matrix(seq(1,31,2),nrow=4,byrow=T)
+```
+
+          [,1] [,2] [,3] [,4]
+    [1,]    1    3    5    7
+    [2,]    9   11   13   15
+    [3,]   17   19   21   23
+    [4,]   25   27   29   31
+
+Se usarmos seq(from=a, to=b, length=c), teremos uma sequência de ‘a’ a
+‘b’, com ‘c’ elementos:
+
+``` r
+ seq(10,20,length=5)
+```
+
+    [1] 10.0 12.5 15.0 17.5 20.0
+
+``` r
+ seq(0,1,length=5)
+```
+
+    [1] 0.00 0.25 0.50 0.75 1.00
