@@ -20,7 +20,7 @@ Horário: das 8h15 às 11h15
 Conteúdo:
 
 - Conjuntos de dados, entrada de dados
-- Sequências
+- [Sequências](https://github.com/edsonzmartinez/ProgramaR/blob/main/Sequencias.md)
 - Medidas descritivas
 - Correlação
 - Pacotes R
