@@ -24,3 +24,4 @@ Conteúdo:
 - [Medidas descritivas](https://github.com/edsonzmartinez/ProgramaR/blob/main/Estat%C3%ADsticas-descritivas.md)
 - Correlação
 - Pacotes R
+- Criando funções no R
