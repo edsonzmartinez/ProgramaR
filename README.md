@@ -21,6 +21,6 @@ Conteúdo:
 
 - Conjuntos de dados, entrada de dados
 - [Sequências](https://github.com/edsonzmartinez/ProgramaR/blob/main/Sequencias.md)
-- Medidas descritivas
+- [Medidas descritivas] (https://github.com/edsonzmartinez/ProgramaR/blob/main/Estat%C3%ADsticas-descritivas.md)
 - Correlação
 - Pacotes R
