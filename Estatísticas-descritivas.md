@@ -106,6 +106,10 @@ aggregate(idade~sexo,data=dados,mean)
     1    F 66.25
     2    M 52.00
 
+A função `aggregate()` divide os dados em subconjuntos, calcula
+estatísticas resumo para cada um deles e retorna o resultado em um
+formato conveniente.
+
 ``` r
 aggregate(idade~sexo,data=dados,sd)
 ```
@@ -159,3 +163,57 @@ Por exemplo, seja o vetor:
 peso <- c(73.5, 71.7, 66.4, 69.2, NA,   70.6, 70.2, 67.1, 69.0, 66.8, 
           68.7, 68.7, 69.0, 69.4, 70.2,   NA,   NA, 68.2, 69.8, 66.8)
 ```
+
+Se há valores faltantes no vetor “peso”, `mean(peso)` retorna `NA`:
+
+``` r
+mean(peso)          
+```
+
+`[1] NA`
+
+A função `anyNA()` verifica se há valores faltantes, e retorna `TRUE` se
+positivo:
+
+``` r
+anyNA(peso)   
+```
+
+`[1] TRUE`
+
+O argumento `na.rm=T` retorna a média dos elementos do vetor,
+desconsiderando os valores faltantes:
+
+``` r
+mean(peso,na.rm=T)
+```
+
+`[1] 69.13529`
+
+## Funções pmax() e pmin()
+
+Por exemplo, sejam os vetores:
+
+``` r
+x1 <- c(8, 5, 6, 8, 2, 0, 1, 9, 3, 1)
+x2 <- c(2, 9, 6, 3, 1, 9, 2, 3, 4, 2)
+x3 <- c(9, 2, 3, 1, 2, 8, 5, 2, 9, 1)
+```
+
+A função `pmax()` (de *parallel maximum*) retorna o maior valor em cada
+posição dos vetores:
+
+``` r
+pmax(x1,x2,x3)
+```
+
+`[1] 9 9 6 8 2 9 5 9 9 2`
+
+A função `pmin()` (de *parallel minimum*) retorna o menor valor em cada
+posição dos vetores:
+
+``` r
+pmin(x1,x2,x3)
+```
+
+`[1] 2 2 3 1 1 0 1 2 3 1`
